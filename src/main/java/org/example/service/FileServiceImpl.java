@@ -45,10 +45,10 @@ public class FileServiceImpl implements FileService {
         logger.debug("Uploading file");
         Path targetLocation = this.fileStorageLocation.resolve(file.getOriginalFilename());
 
-        //after uploadig 5 files at steady state it consumes 1248 MB of memory.
+        //after uploadig 5 files(avg 250MB) at steady state it consumes 1248 MB of memory.
         try (InputStream inputStream = new BufferedInputStream(file.getInputStream())) {
             Files.copy(inputStream, targetLocation, StandardCopyOption.REPLACE_EXISTING);
-            inputStream.close();
+            //inputStream.close();
         }
         logger.info("File uploaded successfully: {}", file.getOriginalFilename());
         targetLocation =null;
