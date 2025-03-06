@@ -16,9 +16,9 @@ java -Xms768m -Xmx1600m -jar target\file-upload-download-service-1.0-SNAPSHOT.ja
 
 Obviously, you can also run the service from your IDE.
 
-upload service can be accessed by: http://<host>:<port>/apiv1/files/upload
+upload service can be accessed by: http://localhost:8080/apiv1/files/upload
 
-download service can be accessed by: http://<host>:<port>/apiv1/files/download/<filename> 
+download service can be accessed by: http://localhost:8080/apiv1/files/download/<filename> 
 
 Also you can use along with the UI code to upload and download files. UI code is at:
 <git_url>
