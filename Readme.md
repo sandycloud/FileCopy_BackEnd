@@ -21,4 +21,5 @@ upload service can be accessed by: http://localhost:8080/apiv1/files/upload
 download service can be accessed by: http://localhost:8080/apiv1/files/download/<filename> 
 
 Also you can use along with the UI code to upload and download files. UI code is at:
-<git_url>
+https://github.com/sandycloud/FilecopyUI
+
